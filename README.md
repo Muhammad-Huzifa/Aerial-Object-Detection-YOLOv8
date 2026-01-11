@@ -2,6 +2,9 @@
 
 A high-performance object detection system based on **YOLOv8**, trained on the **VisDrone dataset** for aerial and surveillance scenarios.
 
+## 🎥 Demo
+
+https://github.com/user-attachments/assets/c4399ebd-9891-4bf0-9a91-435409b02493
 ## ⚡ Quick Start
 
 python setup.py
@@ -43,7 +46,3 @@ python test_inference.py
 8. awning-tricycle  
 9. bus  
 10. motor  
-
-## 🎥 Demo
-
-https://github.com/user-attachments/assets/c4399ebd-9891-4bf0-9a91-435409b02493
