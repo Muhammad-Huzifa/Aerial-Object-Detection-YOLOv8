@@ -12,14 +12,15 @@ python train.py
 python test_inference.py
 
 ## 📁 Project Structure
-
-├── train.py
-├── detector.py
-├── test_inference.py
-├── setup.py
-├── requirements.txt
-└── models/
-    └── best.pt
+```text
+📦 VisDrone-YOLOv8-System
+ ├── 📜 train.py              # Training pipeline (VisDrone download + Training)
+ ├── 📜 detector.py           # Core inference logic class
+ ├── 📜 test_inference.py     # Inference testing script
+ ├── 📜 setup.py              # Environment setup utility
+ ├── 📜 requirements.txt      # Project dependencies
+ └── 📂 models/
+      └── best.pt             # Trained model weights
 
 ## 🧠 Model Details
 
