@@ -1,0 +1,20 @@
+__pycache__/
+*.pyc
+.env
+venv/
+env/
+.vscode/
+
+# Ignore Training Outputs & Weights
+visdrone_training/
+inference_outputs/
+runs/
+wandb/
+models/
+output/
+
+# Ignore Large Files
+*.pt
+*.onnx
+*.mp4
+*.avi
