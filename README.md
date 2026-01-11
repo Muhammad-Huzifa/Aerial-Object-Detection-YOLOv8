@@ -21,7 +21,7 @@ python test_inference.py
  ├── 📜 requirements.txt      # Project dependencies
  └── 📂 models/
       └── best.pt             # Trained model weights
-
+```
 ## 🧠 Model Details
 
 • Architecture: YOLOv8n  
