@@ -1,74 +1,54 @@
-# VisDrone YOLOv8 Detection System
+# VisDrone Object Detection (YOLOv8)
 
-Complete object detection system for VSCode with GPU.
+YOLOv8-based object detection system trained on the VisDrone dataset, designed for VS Code with GPU support.
 
 ## Quick Start
 
-```bash
-# 1. Setup
 python setup.py
-
-# 2. Train (2-3 hours with GPU)
 python train.py
-
-# 3. Test
 python test_inference.py
-
-# 4. Run API
 python api.py
-
-# 5. Run Web App
 streamlit run app.py
-```
 
-## Files
+## Project Structure
 
-```
-├── train.py              # Training script
-├── detector.py           # Detection service
-├── api.py               # FastAPI server
-├── app.py               # Streamlit app
-├── test_inference.py    # Test script
-├── setup.py             # Setup script
-├── requirements.txt     # Dependencies
+├── train.py
+├── detector.py
+├── api.py
+├── app.py
+├── test_inference.py
+├── setup.py
+├── requirements.txt
 └── models/
-    └── best.pt          # Trained model (after training)
-```
+    └── best.pt
 
 ## Requirements
 
-- Python 3.8+
-- CUDA GPU (recommended)
-- 8GB+ RAM
+Python 3.8+
+CUDA-enabled GPU (recommended)
+8GB+ RAM
 
 ## Training
 
-Training downloads VisDrone dataset from Roboflow and trains YOLOv8n for 100 epochs.
-
-Output: `models/best.pt`
+Dataset: VisDrone (Roboflow)
+Model: YOLOv8n
+Epochs: 100
+Output: models/best.pt
 
 ## Usage
 
-### Python
-```python
+Python:
 from detector import Detector
-
-detector = Detector('models/best.pt')
+detector = Detector("models/best.pt")
 results = detector.detect_image(image)
-print(results['detections'])
-```
 
-### API
-```bash
+API:
 python api.py
-# POST http://localhost:8000/detect/image
-```
+POST http://localhost:8000/detect/image
 
-### Web App
-```bash
+Web App:
 streamlit run app.py
-# Open http://localhost:8501
-```
+http://localhost:8501
 
 ## Classes
 
@@ -82,3 +62,7 @@ streamlit run app.py
 8. awning-tricycle
 9. bus
 10. motor
+
+## Demo
+
+https://github.com/user-attachments/assets/c4399ebd-9891-4bf0-9a91-435409b02493
