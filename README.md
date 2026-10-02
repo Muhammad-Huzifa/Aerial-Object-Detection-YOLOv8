@@ -26,8 +26,8 @@ Included example input:
 Use a fresh environment with **64-bit Python 3.11**.
 
 ```bash
-git clone https://github.com/Muhammad-Huzifa/Aerial-Object-Detection-YOLOv8.git
-cd Aerial-Object-Detection-YOLOv8
+git clone https://github.com/Muhammad-Huzifa/aerial-object-detection.git
+cd aerial-object-detection
 ```
 
 On Windows Command Prompt:
