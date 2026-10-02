@@ -1,0 +1,2 @@
+# Optional SDK used only by train.py --download.
+roboflow==1.1.23

@@ -1,4 +1,4 @@
-"""Compatibility launcher for inference; use predict.py for new commands."""
+"""Run image or video inference with a trained checkpoint."""
 
 from aerial_detection.inference import main
 
