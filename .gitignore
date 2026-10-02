@@ -1,20 +1,32 @@
+# Python and local environments
 __pycache__/
-*.pyc
-.env
+*.py[cod]
+.venv/
 venv/
 env/
-.vscode/
+.ipynb_checkpoints/
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
 
-# Ignore Training Outputs & Weights
+# Datasets, model weights, and generated outputs
+data/
+models/
 visdrone_training/
 inference_outputs/
 runs/
 wandb/
-models/
 output/
-
-# Ignore Large Files
 *.pt
 *.onnx
 *.mp4
 *.avi
+*.mov
+*.mkv
+*.webm
+
+# Local editor and operating system files
+.vscode/
+.DS_Store
+Thumbs.db
